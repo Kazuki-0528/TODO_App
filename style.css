@@ -7,13 +7,21 @@
 body {
   height: 100%;
   background-color: #ffffff;
+  display: grid;
+  grid-template:
+    "....." 25px
+    "title"
+    "....." 10px
+    "input"
+    "....." 25px
+    "item ";
 }
 
 h1 {
+  grid-area: title;
   font-size: 2rem;
   font-weight: 50;
   text-align: center;
-  margin: 1rem 1rem;
   color: rgb(7, 121, 222);
   font-family: "Roboto", sans-serif;
 }
@@ -24,6 +32,7 @@ h1 {
 }
 
 .input_div {
+  grid-area: input;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +47,6 @@ h1 {
   background-color: rgba(2, 188, 255, 0.363);
   width: 450px;
   font-size: 1.15rem;
-  margin: 0.25rem;
   border-radius: 25px;
 }
 
@@ -50,7 +58,6 @@ h1 {
   border: none;
   background-color: rgba(0, 255, 255, 0.336);
   color: black;
-  margin: 0.25px;
   cursor: pointer;
 }
 
@@ -59,17 +66,16 @@ h1 {
 }
 
 .container {
+  grid-area: item;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 2rem;
 }
 
 .item {
   padding: 0.5rem;
-  margin-bottom: 1.5rem;
   border-bottom: 4px solid rgba(2, 188, 255, 0.363);
 }
 
@@ -84,7 +90,7 @@ h1 {
 
 .editButton {
   font-size: 1.4rem;
-  margin: 0 0.5rem;
+  margin: 1px 10px;
   font-family: "Roboto", sans-serif;
   background: none;
   outline: none;

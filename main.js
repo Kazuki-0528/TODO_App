@@ -2,7 +2,7 @@ const addButton = document.querySelector(".addButton");
 var input = document.querySelector(".input");
 const container = document.querySelector(".container");
 
-class item {
+class Item {
   constructor(itemName) {
     this.createDiv(itemName);
   }
@@ -47,7 +47,7 @@ class item {
 
 function check() {
   if (input.value != "") {
-    new item(input.value);
+    new Item(input.value);
     input.value = "";
   }
 }

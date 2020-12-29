@@ -15,7 +15,7 @@ class Item {
     input.type = "text";
 
     let itemBox = document.createElement("div");
-    itemBox.classList.add("editButton");
+    itemBox.classList.add("item");
 
     let editButton = document.createElement("button");
     editButton.innerHTML = "EDIT";

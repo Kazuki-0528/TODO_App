@@ -1,16 +1,27 @@
+$main-color: rgb(7, 121, 222);
+$sub-color: rgba(2, 188, 255, 0.363);
+$remove-color: rgba(230, 8, 8, 0.646);
+$background-color: #ffffff;
+$add-color: rgba(0, 255, 255, 0.336);
+$cBlack: black;
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   height: 100%;
-  background-color: #ffffff;
-  display: -ms-grid;
+  background-color: $background-color;
   display: grid;
-  grid-template: "....." 25px "title" "....." 10px "input" "....." 25px "item ";
+  grid-template:
+    "....." 25px
+    "title"
+    "....." 10px
+    "input"
+    "....." 25px
+    "item ";
 }
 
 h1 {
@@ -18,26 +29,20 @@ h1 {
   font-size: 2rem;
   font-weight: 50;
   text-align: center;
-  color: #0779de;
+  color: $main-color;
   font-family: "Roboto", sans-serif;
 }
 
 .styling {
   font-weight: 800;
-  color: black;
+  color: $cBlack;
 }
 
 .input_div {
   grid-area: input;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -46,7 +51,7 @@ h1 {
   height: 50px;
   border: none;
   outline: none;
-  background-color: rgba(2, 188, 255, 0.363);
+  background-color: $sub-color;
   width: 450px;
   font-size: 1.15rem;
   border-radius: 25px;
@@ -58,8 +63,8 @@ h1 {
   border-radius: 25px;
   outline: none;
   border: none;
-  background-color: rgba(0, 255, 255, 0.336);
-  color: black;
+  background-color: $add-color;
+  color: $cBlack;
   cursor: pointer;
 }
 
@@ -69,31 +74,22 @@ h1 {
 
 .container {
   grid-area: item;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .item {
   padding: 0.5rem;
-  border-bottom: 4px solid rgba(2, 188, 255, 0.363);
+  border-bottom: 4px solid $sub-color;
 }
 
 .item_input {
   background: none;
   outline: none;
-  color: black;
+  color: $cBlack;
   border: none;
   width: 350px;
   font-size: 1.4rem;
@@ -105,7 +101,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   background: none;
   outline: none;
-  color: black;
+  color: $cBlack;
   border: none;
   cursor: pointer;
 }
@@ -115,8 +111,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   background: none;
   outline: none;
-  color: rgba(230, 8, 8, 0.646);
+  color: $remove-color;
   border: none;
   cursor: pointer;
 }
-/*# sourceMappingURL=style.css.map */

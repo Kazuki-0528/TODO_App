@@ -8,14 +8,14 @@ class Item {
   }
 
   createDiv(itemName) {
+    let itemBox = document.createElement("div");
+    itemBox.classList.add("editButton");
+
     let input = document.createElement("input");
     input.value = itemName;
     input.disabled = true;
     input.classList.add("item_input");
     input.type = "text";
-
-    let itemBox = document.createElement("div");
-    itemBox.classList.add("editButton");
 
     let editButton = document.createElement("button");
     editButton.innerHTML = "EDIT";
@@ -54,7 +54,7 @@ function check() {
 
 addButton.addEventListener("click", check);
 window.addEventListener("keydown", (e) => {
-  if (e.which == 13) {
+  if (e.key == 13) {
     check();
   }
 });

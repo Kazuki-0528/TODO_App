@@ -27,6 +27,10 @@ h1 {
   color: black;
 }
 
+.done {
+  text-decoration: line-through;
+}
+
 .input_div {
   grid-area: input;
   display: -webkit-box;
@@ -97,6 +101,17 @@ h1 {
   border: none;
   width: 350px;
   font-size: 1.4rem;
+}
+
+.doneButton {
+  font-size: 1.4rem;
+  margin: 1px 10px;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  outline: none;
+  color: black;
+  border: none;
+  cursor: pointer;
 }
 
 .editButton {

@@ -1,5 +1,5 @@
 const addButton = document.querySelector(".addButton");
-var input = document.querySelector(".input");
+const input = document.querySelector(".input");
 const container = document.querySelector(".container");
 
 class Item {
@@ -17,6 +17,10 @@ class Item {
     input.classList.add("item_input");
     input.type = "text";
 
+    let doneButton = document.createElement("button");
+    doneButton.innerHTML = "DONE";
+    doneButton.classList.add("doneButton");
+
     let editButton = document.createElement("button");
     editButton.innerHTML = "EDIT";
     editButton.classList.add("editButton");
@@ -28,8 +32,13 @@ class Item {
     container.appendChild(itemBox);
 
     itemBox.appendChild(input);
+    itemBox.appendChild(doneButton);
     itemBox.appendChild(editButton);
     itemBox.appendChild(removeButton);
+
+    doneButton.addEventListener("click", () => {
+      input.classList.toggle("done");
+    });
 
     editButton.addEventListener("click", () => this.edit(input));
 

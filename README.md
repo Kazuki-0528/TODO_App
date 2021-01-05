@@ -4,7 +4,7 @@
 
 ## 概要
 
-JavaScript で作成した TO DO アプリです。
+JavaScript で作成した TODO アプリです。<br>
 https://shetodo.herokuapp.com/
 
 ## 機能

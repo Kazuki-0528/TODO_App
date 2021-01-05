@@ -1,8 +1,13 @@
-# JavaScript ToDo アプリ
+## JavaScript ToDo アプリ
 
 ![Screen Recording 2021-01-05 at 02 29 PM](https://user-images.githubusercontent.com/60289223/103610136-bd860b80-4f62-11eb-848c-d7297fc6d1fd.gif)
 
-## Description
+## 概要
+
+JavaScript で作成した TO DO アプリです。
+https://shetodo.herokuapp.com/
+
+## 機能
 
 新規に ToDo を追加できる<br>
 各アイテムの一覧が閲覧できる<br>
@@ -10,6 +15,22 @@
 各アイテムを完了済み・未完了にできる<br>
 各アイテムを削除できる<br>
 
-## URL
+## 使い方
 
-https://shetodo.herokuapp.com/
+### タスクを登録する
+
+フォームエリアからタスクを入力して、「+ボタン」をクリックします。
+
+### タスクを完了状態にする
+
+タスクの「DONE」ボタンをクリックしてテキストの各行の中央を貫く線を引きます。
+もう一度クリックすると貫く線が外れて完了状態を解除することができます。
+
+### タスクを編集する
+
+編集したいタスクの「EDIT」ボタンをクリックします。
+編集したい項目を編集し、もう一度「EDIT」ボタンをクリックすると登録されます。
+
+### タスクを削除する
+
+削除したいタスクの「REMOVE」ボタンをクリックすると削除できます。

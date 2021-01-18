@@ -17,17 +17,11 @@ body {
   display: grid;
   grid-template:
     "....." 20px
-    "table"
-    "....." 25px
     "title"
     "....." 10px
     "input"
     "....." 25px
     "item ";
-}
-
-.table {
-  grid-area: table;
 }
 
 h1 {

@@ -10,11 +10,7 @@ body {
   background-color: #ffffff;
   display: -ms-grid;
   display: grid;
-  grid-template: "....." 20px "table" "....." 25px "title" "....." 10px "input" "....." 25px "item ";
-}
-
-.table {
-  grid-area: table;
+  grid-template: "....." 20px "title" "....." 10px "input" "....." 25px "item ";
 }
 
 h1 {

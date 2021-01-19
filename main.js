@@ -63,7 +63,7 @@ function check() {
 
 addButton.addEventListener("click", check);
 addEventListener("keydown", (e) => {
-  if (e.key == 13) {
+  if (e.which == 13) {
     check();
   }
 });
